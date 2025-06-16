@@ -1,11 +1,8 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="SBSYM Degree College, Onipenta Road, Mydukur..." />
-  <meta name="google-site-verification" content="abc123yourcode..." />....
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="zrTS0rF1P7WIB2UoVfOkJsVAgGVanGOdOxxECZbMGUY" />
   <meta name="description" content="SBSYM Degree College, Onipenta Road, Mydukur - Courses, Contact Info, and More"/>
   <meta name="keywords" content="SBSYM College, Degree College Mydukur, BSc, BCom, BA, Andhra Pradesh"/>
   <meta name="author" content="SBSYM Degree College"/>
@@ -46,32 +43,13 @@
     main {
       padding: 20px;
     }
-
-    .slideshow-container {
+    .banner {
       width: 100%;
-      max-width: 800px;
-      height: 350px;
-      margin: 0 auto 20px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      position: relative;
-    }
-
-    .slide {
-      display: none;
-      width: 100%;
-      height: 100%;
+      max-height: 400px;
       object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
-
-    .slide.active {
-      display: block;
-      position: absolute;
-    }
-
     section {
       background: #ffffff;
       padding: 20px;
@@ -79,22 +57,18 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
     }
-
     section h2 {
       color: #005f6b;
     }
-
     ul {
       padding-left: 20px;
     }
-
     footer {
       background: #002f4b;
       color: white;
       padding: 15px;
       text-align: center;
     }
-
     .hidden {
       display: none;
     }
@@ -107,12 +81,10 @@
       flex-wrap: wrap;
       margin-top: 20px;
     }
-
     .contact-images .person {
       text-align: center;
       max-width: 220px;
     }
-
     .contact-images img {
       width: 100%;
       max-width: 200px;
@@ -122,7 +94,18 @@
       margin-bottom: 10px;
     }
   </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+    window.onload = () => showSection('home');
+  </script>
 </head>
+
+    
+  
+      
 <body>
   <header>
     <h1>SBSYM Degree College</h1>
